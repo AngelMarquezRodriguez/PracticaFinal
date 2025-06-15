@@ -1,0 +1,125 @@
+/* RESET GENERAL */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: #0d0d0d; /* fondo mucho más oscuro */
+  color: #f0f0f0;
+}
+
+/* CONTENEDOR BASE */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(90deg, #000000, #222222);
+  color: #ffcc00;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 3px solid #ffcc00;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* MENÚ */
+.menu {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.2);
+}
+
+.menu a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* MAIN CONTENIDO */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.2);
+}
+
+.contenido-titulo {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.contenido-texto {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* PUBLICIDAD */
+.publicidad {
+  background-color: #2a2a2a;
+  color: #ffe066;
+  border-left: 5px solid #ffcc00;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+  text-align: center;
+  font-style: italic;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1rem;
+  border-top: 2px solid #ffcc00;
+  box-shadow: 0 -3px 10px rgba(255, 204, 0, 0.1);
+}
